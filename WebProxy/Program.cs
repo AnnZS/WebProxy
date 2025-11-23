@@ -10,7 +10,6 @@ using System.Runtime.InteropServices;
 
 class Program
 {
-       // kom
     static List<string> blockedDomains = new List<string>();
     static readonly object blockedLock = new object();
     static async Task Main(string[] args)
@@ -117,7 +116,7 @@ class Program
                 blockedDomains.Add(domain);
             }
 
-            Console.WriteLine($"Strona {domain} znowu zablokowana");
+            Console.WriteLine($"Strona {domain} znowu jest zablokowana");
         }
     }
 }
